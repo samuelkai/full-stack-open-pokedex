@@ -1,5 +1,9 @@
 #!/bin/bash
 
-echo "Hello from shell script"
-
-exit 0  # exit status 0 means that the script "succeeds"
+result="$(curl -s 'https://old-firefly-9065.fly.dev/health')"
+if [ "$result" == "ok" ]
+then
+    exit 0
+else
+    exit 1
+fi
