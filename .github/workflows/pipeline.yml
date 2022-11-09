@@ -8,7 +8,7 @@ on:
     branches: [master]
     types: [opened, synchronize]
 
-# This line is for testing the skip keyword
+# This line is for testing the skip keyword, test 2
 
 jobs:
   simple_deployment_pipeline:
