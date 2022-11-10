@@ -2,8 +2,6 @@ name: Periodic health check
 
 on:
   workflow_dispatch:
-  schedule:
-    - cron: '*/5 * * * *'
 
 jobs: 
   periodic_health_check:
