@@ -7,6 +7,10 @@ const PORT = process.env.PORT || 8080
 app.use(express.static('dist'))
 
 app.get('/health', (req, res) => {
+  res.send('ok')
+})
+
+app.get('/unhealthy', (req, res) => {
   res.sendStatus(500)
 })
 
